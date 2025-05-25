@@ -16,7 +16,7 @@ fernet = Fernet(key)
 randpasschrctrs = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890:;!?@_-()"
 
 def init_db():
-    conn = sqlite3.connect('sifreler.db')
+    conn = sqlite3.connect('passwords.db')
     c = conn.cursor()
     c.execute('''
         CREATE TABLE IF NOT EXISTS sifreler (
